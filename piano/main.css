@@ -49,10 +49,9 @@
     float:left; 
     text-align: center;
  }
- .littlestarstar{
+ #littlestarstar{
     position: relative;
     width:15%;
     height:50%;
     float:left;
-    text-align: center;
  }
