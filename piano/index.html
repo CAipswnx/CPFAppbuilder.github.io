@@ -62,11 +62,7 @@
 
     }
     loop();
-    function setup(){
-        if(cpf){
-            cpf.setPinMode('["resetPin"],["setPinMode","digital",5,"OUTPUT"]');
-        }
-    }
+    
 
         
         /*var x = new Array["Do","Re","Me","Fa","So","La","Si"];*/
@@ -101,6 +97,11 @@
                 });
             }
         }
-	});*/
+    });*/
+    function setup(){
+        if(cpf){
+            cpf.setPinMode('["resetPin"],["setPinMode","digital",5,"OUTPUT"]');
+        }
+    }
     </script>
 </html>
