@@ -24,6 +24,19 @@
 					</div>
 					<p>
 				</div>
+				<div class="output">
+					<div class="output_title">
+						<h2 style="margin-top: 5px;">Lighting</h2>
+					</div>
+					<hr style="margin-top: 0px;">
+					<div class="output_img">
+						<img src="./images/bulb.png" id="bulb" class="sensors" style="width: 30%; top: 5%;">
+					</div>
+					<div class="output_content">
+						<img src="./images/lighton.png" class="lighting" id="lighton">
+						<img src="./images/light_off.png" class="lighting" id="lightoff">
+					</div>
+				</div>
 				<div id="rgb" class="col-sm-6 col-xs-12">
 					<img class="rgbled" src="img/rgb.png" />
 					<table style="margin: 0 auto; margin-top: 10px;">
@@ -67,10 +80,13 @@
 		</div>
 
 		<script>
-
+			
+			var lightValue;
 			var lightdata;
 			var lighton;
-	        var lightoff;
+			var lightoff;
+			var lighton = document.getElementById("lighton");
+			var lightoff = document.getElementById("lightoff");
 			setup();
 			// Analog
 			function loop() {
@@ -104,7 +120,7 @@
 					//lighton.addEventListener('start', function(event) {
 					//lighton.src= './images/light_on.png';
 					//lightoff.src= './images/lightoff.png';
-					cpf.request('["digitalWrite", 4 , 1]');
+					cpf.request('["digitalWrite", 2 , 1]');
 					//});
 
 
@@ -124,7 +140,7 @@
 					//lightoff.addEventListener('touchstart', function(event) {
 					//lightoff.src= './images/light_off.png';
 					//lighton.src= './images/lighton.png';
-					cpf.request('["digitalWrite", 4 , 0]');
+					cpf.request('["digitalWrite", 2 , 0]');
 					//});
 
 				}
@@ -136,7 +152,7 @@
 			// cpf setup
 			function setup() {
 				if (cpf)
-					cpf.setPinMode('["resetPin"],["setPinMode", "analog", 0, "INPUT"],["grove_newChainableLED", 7, 8, 1]');
+					cpf.setPinMode('["resetPin"],["setPinMode", "analog", 0, "INPUT"],["grove_newChainableLED", 7, 8, 1]',["setPinMode", "digital", 2,"OUTPUT"]);
 				//document.getElementById("demo").innerHTML += ret + "<br>";
 			}
 
