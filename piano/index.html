@@ -66,25 +66,25 @@
                 /*var x = new Array["Do","Re","Me","Fa","So","La","Si"];*/
         
                 Do.addEventListener('touchstart', function(event) {
-                cpf.request('["digitalWrite", 5 , 261]');
+                cpf.request('["tone_play", 5 , 261,100],["sleep",100]');
                 });
                 Re.addEventListener('touchstart', function(event) {
-                cpf.request('["digitalWrite", 5 , 293]');
+                cpf.request('["tone_play", 5 , 293,100],["sleep",100]');
                 });
                 Mi.addEventListener('touchstart', function(event) {
-                cpf.request('["digitalWrite", 5 , 329');
+                cpf.request('["tone_play", 5 , 329,100],["sleep",100]');
                 });
                 Fa.addEventListener('touchstart', function(event) {
-                cpf.request('["digitalWrite", 5 , 349]');
+                cpf.request('["tone_play", 5 , 349,100],["sleep",100]');
                 });
                 So.addEventListener('touchstart', function(event) {
-                cpf.request('["digitalWrite", 5 , 392]');
+                cpf.request('["tone_play", 5 , 392,100],["sleep",100]');
                 });
                 La.addEventListener('touchstart', function(event) {
-                cpf.request('["digitalWrite", 5 , 440]');
+                cpf.request('["tone_play", 5 , 440,100],["sleep",100]');
                 });
                 Si.addEventListener('touchstart', function(event) {
-                cpf.request('["digitalWrite", 5 , 493]');
+                cpf.request('["tone_play", 5 , 493,100],["sleep",100]');
                 });
         
                 /*var x = new Array["Do","Re","Me","Fa","So","La","Si"];
@@ -98,7 +98,7 @@
             });*/
             function setup(){
                 if(cpf){
-                    cpf.setPinMode('["resetPin"],["setPinMode","digital",5,"OUTPUT"]');
+                    cpf.setPinMode('["resetPin"],["setPinMode","digital",5,"TONE"]');
                 }
             }
             </script>
