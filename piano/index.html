@@ -44,15 +44,31 @@
             <td class="lab align-center">Si</td>
         </tr>
     </table>
+    
+</body>
+<script>
+    
+    setup();
 
-    <script>
-        var Do = document.getElementById("do");
-        var Re = document.getElementById("re");
-        var Mi = document.getElementById("mi");
-        var Fa = document.getElementById("fa");
-        var So = document.getElementById("so");
-        var La = document.getElementById("la");
-        var Si = document.getElementById("si");
+    var Do = document.getElementById("do");
+    var Re = document.getElementById("re");
+    var Mi = document.getElementById("mi");
+    var Fa = document.getElementById("fa");
+    var So = document.getElementById("so");
+    var La = document.getElementById("la");
+    var Si = document.getElementById("si");
+
+    function loop(){
+
+    }
+    loop();
+    function setup(){
+        if(cpf){
+            cpf.setPinMode('["resetPin"],["setPinMode","digital",5,"OUTPUT"]')
+        }
+    }
+
+        
         /*var x = new Array["Do","Re","Me","Fa","So","La","Si"];*/
 
         Do.addEventListener('touchstart', function(event) {
@@ -87,5 +103,4 @@
         }
 	});*/
     </script>
-</body>
 </html>
