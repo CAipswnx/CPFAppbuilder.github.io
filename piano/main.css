@@ -4,48 +4,48 @@
 }
 #do{
    position: relative;
-   width:135px;
+   width:13.5%;
    height:720px;
    float:left;
 }
 #re{
     position: relative;
-    width:135px;
+    width:13.5%;
     height:720px;
     float:left;
  }
  #mi{
     position: relative;
-    width:135px;
+    width:13.5%;
     height:720px;
     float:left;
  }
  #fa{
     position: relative;
-    width:135px;
+    width:13.5%;
     height:720px;
     float:left;
  }
  #so{
     position: relative;
-    width:135px;
+    width:13.5%;
     height:720px;
     float:left;
  }
  #la{
     position: relative;
-    width:135px;
+    width:13.5%;
     height:720px;
     float:left;
  }
  #si{
     position: relative;
-    width:135px;
+    width:13.5%;
     height:720px;
     float:left;
  }
  .lab{
-    width: 135px; 
+    width: 13.5%; 
     float:left; 
     text-align: center;
  }
