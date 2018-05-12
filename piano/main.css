@@ -1,47 +1,47 @@
 .key{
     width:100%;
-    height:100px;
+    height:50%;
 }
 #do{
    position: relative;
    width:15%;
-   height:100px;
+   height:50%;
    float:left;
 }
 #re{
     position: relative;
     width:14%;
-    height:100px;
+    height:50%;
     float:left;
  }
  #mi{
     position: relative;
     width:14%;
-    height:100px;
+    height:50%;
     float:left;
  }
  #fa{
     position: relative;
     width:14%;
-    height:200px;
+    height:50%;
     float:left;
  }
  #so{
     position: relative;
     width:14%;
-    height:100px;
+    height:50%;
     float:left;
  }
  #la{
     position: relative;
     width:14%;
-    height:100px;
+    height:50%;
     float:left;
  }
  #si{
     position: relative;
     width:15%;
-    height:100px;
+    height:50%;
     float:left;
  }
  .lab{
