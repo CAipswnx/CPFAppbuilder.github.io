@@ -98,21 +98,24 @@
                 cpf.request('["tone_play", 5 , 493,100],["sleep",100]');
             });
             Lss.addEventListener('touchstart', function(event) {
-            
+                print("1");
                 if(Lss.src=='./img/play.png'){
                    Lss.src= './img/pause.png';
                     star();
+                    print("2");
                 }
                 else if(Lss.src=='./img/pause.png'){
                     Lss.src= './img/play.png';
                     cpf.request('["digitalWrite", 5 , 0]');
+                    print("3");
                 }
                
             });
 
             function star(){
                 for(i=0;i < starmusic.length;i++){
-                    switch(starmusic[i]){
+                    print("4");
+                    switch(starmusic[i]){                        
                         case 1:
                         cpf.request('["tone_play", 5 , 261,100],["sleep",100]');
                         break;
