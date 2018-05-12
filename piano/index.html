@@ -49,6 +49,9 @@
         <td id="littlestarstar" >
             <img type="button" src="img/play.png">
         </td>
+        <td id="sp">
+            <img src="img/Si.png">
+        </td>
     </tr>
     </table>
     <script>
@@ -62,8 +65,9 @@
             var So = document.getElementById("so");
             var La = document.getElementById("la");
             var Si = document.getElementById("si");
+            var Sp = document.getElementById("sp");
             var Lss = document.getElementById("littlestarstar"); 
-                   
+
             function loop(){
         
             }
@@ -107,6 +111,9 @@
                     print("3");
                 }*/
                
+            });
+            Sp.addEventListener('touchstart', function(event) {
+                cpf.request('["tone_play", 5 , 493,100],["sleep",100]');
             });
 
             function star(){
