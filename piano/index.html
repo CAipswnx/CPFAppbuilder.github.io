@@ -96,32 +96,39 @@
                 cpf.request('["tone_play", 5 , 493,100],["sleep",100]');
             });
             Littlestarstar.addEventListener('touchstart', function(event) {
-                Littlestarstar.src= './images/pause.png';
-                star();
+                if(Littlestarstar.src=='./img/play.png'){
+                    Littlestarstar.src= './img/pause.png';
+                    star();
+                }
+                else if(Littlestarstar.src=='./img/pause.png'){
+                    Littlestarstar.src= './img/play.png';
+                    cpf.request('["digitalWrite", 5 , 0]');
+                }
+               
             });
 
             function star(){
                 for(i=0;i < starmusic.length;i++){
                     switch(starmusic[i]){
-                        case 1:
+                        case "1":
                         cpf.request('["tone_play", 5 , 261,100],["sleep",100]');
                         break;
-                        case 2:
+                        case "2":
                         cpf.request('["tone_play", 5 , 293,100],["sleep",100]');
                         break;
-                        case 3:
+                        case "3":
                         cpf.request('["tone_play", 5 , 329,100],["sleep",100]');
                         break;
-                        case 4:
+                        case "4":
                         cpf.request('["tone_play", 5 , 349,100],["sleep",100]');
                         break;
-                        case 5:
+                        case "5":
                         cpf.request('["tone_play", 5 , 392,100],["sleep",100]');
                         break;
-                        case 6:
+                        case "6":
                         cpf.request('["tone_play", 5 , 440,100],["sleep",100]');
                         break;
-                        case 7:
+                        case "7":
                         cpf.request('["tone_play", 5 , 493,100],["sleep",100]');
                         break;
                     }
